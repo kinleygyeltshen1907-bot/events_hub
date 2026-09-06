@@ -93,3 +93,15 @@ display: block; margin: 4px 0;
 }
 body { font-size: 15px; }
 }
+
+/* Pseudo-class rule: highlights table rows when hovered to improve readability */
+table tbody tr:hover {
+  background-color: #f1f5f9;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Attribute selector rule: adds a distinct border to input elements with type="text" */
+input[type="text"] {
+  border: 2px solid #0d6efd;
+  border-radius: 4px;
+}
