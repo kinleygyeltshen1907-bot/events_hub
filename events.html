@@ -12,6 +12,7 @@ rel="stylesheet">
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
    <link rel="stylesheet" href="css/styles.css"> 
  </head> 
+
  <body> 
    <header id="top"> 
   <h1>JNEC Events Hub</h1> 
@@ -121,6 +122,38 @@ Football">
   <p>&copy; 2026 JNEC Events Hub</p> 
    </footer> 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+   <!-- Search + filter controls -->
+<div class="row g-2 mb-3">
+    <!-- Search box: user types event title -->
+    <div class="col-md-8">
+        <label for="search" class="form-label">Search by title</label>
+        <input type="search" id="search" class="form-control" placeholder="e.g. Hackathon">
+    </div>
+
+    <!-- Dropdown filter: lets user choose All / Open / Sold out -->
+    <div class="col-md-4">
+        <label for="seat-filter" class="form-label">Seats</label>
+        <select id="seat-filter" class="form-select">
+            <option value="all">All events</option>
+            <option value="open">Open seats</option>
+            <option value="full">Sold out</option>
+        </select>
+    </div>
+</div>
+
+<!-- Empty container: JavaScript will insert event cards here dynamically -->
+<div class="row g-3" id="eventList"></div>
+
+  <footer> 
+  <p>&copy; <span id="year"></span> JNEC Events Hub</p> 
+   </footer> 
+   <script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+   <script src="js/main.js"></script> 
+ </body> 
+ </html> 
+
  </body> 
  </html> 
 
